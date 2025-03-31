@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Dashboard</title>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+   
+
+       <!-- Sidebar Section -->
+       <div class="sidebar">
+
+        <!-- Logo / Branding -->
+        <div class="logo">
+            <i class="fa-solid fa-circle-nodes"></i> Digisurance
+        </div>
+
+        <!-- Sidebar Menu -->
+        <ul class="menu">
+            <!-- Policies Menu -->
+            <li onclick="toggleSubmenu('policies-submenu')">
+                <i class="fa-solid fa-folder-closed"></i> Policies
+                <i class="fas fa-chevron-down arrow"></i>
+            </li>
+            <ul id="policies-submenu" class="submenu">
+                <li><i class="fa-solid fa-file-circle-plus"></i> New Policies</li>
+            </ul>
+
+            <!-- Claims Menu -->
+            <li onclick="toggleSubmenu('claims-submenu')">
+                <i class="fa-solid fa-list-check"></i> Claims
+                <i class="fas fa-chevron-down arrow"></i>
+            </li>
+            <ul id="claims-submenu" class="submenu">
+                <li><i class="fa-solid fa-file-circle-plus"></i> New Claims</li>
+                <li><i class="fa-solid fa-table-list"></i> Claim List</li>
+                <li><i class="fa-solid fa-heart-pulse"></i> Diagnosis</li>
+            </ul>
+
+            <!-- Coverages Menu -->
+            <li onclick="toggleSubmenu('coverages-submenu')">
+                <i class="fa-solid fa-layer-group"></i> Coverages
+                <i class="fas fa-chevron-down arrow"></i>
+            </li>
+            <ul id="coverages-submenu" class="submenu">
+                <li><i class="fa-solid fa-user-shield"></i> Personal</li>
+                <li><i class="fa-solid fa-briefcase"></i> Business</li>
+            </ul>
+
+            <!-- Annuities Menu -->
+            <li onclick="toggleSubmenu('annuities-submenu')">
+                <i class="fa-solid fa-coins"></i> Annuities
+                <i class="fas fa-chevron-down arrow"></i>
+            </li>
+            <ul id="annuities-submenu" class="submenu">
+                <li><i class="fa-solid fa-dollar-sign"></i> View Annuities</li>
+            </ul>
+        </ul>
+    </div>
+<!-- 
+    others parts -->
+    <div class="all-containers">
+    <div class="cards-container">
+
+    <div class="insurance-card">
+        <h1>Health Insurance</h1>
+        <div class="coverages">Coverages</div>
+        <div class="amount">$12,453.65</div>
+    </div>
+    
+    
+    <div class="business-card">
+        <h1>Business Insulance</h1>
+        <div class="coverages">Coverages</div>
+        <div class="amount">$12,453.65</div>
+    </div>
+
+
+    
+    <div class="auto-card">
+        <h1>Auto insurance</h1>
+        <div class="coverages">Coverages</div>
+        <div class="amount">$12,453.65</div>
+    </div>
+
+    </div>
+
+
+
+
+
+    <div class="navigation-container">
+      <div class="navigation">
+        <a href="#all-users" class="active">All 10</a>
+        <a href="#">Health Coverages</a>
+        <a href="#">Liability Coverages</a>
+        <a href="#">Auto Insurance</a>
+        <a href="#">Umbrella Insurance</a>
+      </div>
+
+
+      <div id="all-users" class="profile-images">
+        <img src="claude.png" alt="User 1" class="profile-img">
+        <img src="images.jpg" alt="User 2" class="profile-img">
+        <img src="images.jpg" alt="User 3" class="profile-img">
+
+         
+     <div class="options">
+     <select class="liabilities">
+         <option>Liabilities</option>
+     </select>
+ 
+     <select class="">
+         <option>Coverages</option>
+     </select>
+ 
+     <select class="effectiveDte">
+         <option>Effective Date</option>
+     </select>
+ 
+     <select class="endDate">
+         <option>End Date</option>
+     </select>
+ 
+     <select class="performance">
+         <option>Performance</option>
+     </select>
+
+    </div>
+     </div>
+
+    <!-- table -->
+     <div class="table">
+
+        <div class="header">
+            <span class="title">#234021 <strong>-Boom Boom Choco Jeju </strong></span>
+            
+        <p class="subtitle"><i class="fas fa-map-marker-alt"></i> SL 7 Attorney Woo, Jeju, South korea</p>
+       </div>
+
+     <div class="stats">
+        <div class="stat">
+           Liabilities<br>
+           <strong> $205,350</strong> 
+        </div>
+        <div class="stat">
+           Coverages<br>  <strong>$2,350</strong>
+        </div>
+     
+
+     <div class="stat"> Effective Date<br>
+        <strong> March 23, 2024</strong>
+    </div>
+
+    <div class="stat"> End Date<br>
+      <strong>  March 23, 2024</strong>
+    </div>
+
+    <div class="stat"> Renews In<br>
+        <strong>20 Days</strong>
+    </div>
+    
+    <div>
+        Performance
+        <i class="fas fa-circle text-success"></i> <strong> In Progress 3/6</strong>
+       </div>
+
+    
+     <!-- <table> -->
+       <div class="coverages">
+        <table class="coverage-table">
+        <tr>
+            <th>Coverages</th>
+            <th>Limit</th>
+            <th>SIR</th>
+        </tr>
+        <tr>
+            <td>Property Insurance</td>
+            <td>$150,350</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Liabilities Insurance</td>
+            <td>$630,145</td>
+            <td>$2,430</td>
+        </tr>
+
+        <tr>
+            <td>Worker's Comensation</td>
+            <td>As required</td>
+            <td>$764</td>
+        </tr>
+
+
+        <tr>
+            <td>Business Interruption</td>
+            <td>80,000</td>
+            <td>$1,539</td>
+        </tr>
+
+        <tr>
+            <td>Equipment Breakdown</td>
+            <td>$54,000</td>
+            <td>$235</td>
+        </tr>
+    </div>
+        </table>
+
+         <div class="summary">
+            <h3>Summary Invoice</h3>
+            <p><strong>Payment Schedule:</strong>Annaul Schedule</p>
+            <p><strong>Payment Due Date:</strong>March</p>
+
+            <div class="bill-section">
+                <div>
+                    <h3>Next Bill </h3>
+                    <p style="font-size:24px; font-wight:bold;">$803.10</p>
+                </div>
+                <button>See Bill</button>
+            </div>
+        
+   </div>
+    
+
+
+    
+   
+
+
+    
+    
+
+    <!-- JavaScript for Dropdown Functionality -->
+    <script>
+        function toggleSubmenu(submenuId) {
+            // Get the submenu element by ID
+            let submenu = document.getElementById(submenuId);
+            
+            // Get the arrow icon next to the menu item
+            let arrow = submenu.previousElementSibling.querySelector(".arrow");
+            
+            // Toggle submenu visibility
+            if (submenu.style.display === "block") {
+                submenu.style.display = "none"; // Hide submenu
+                arrow.style.transform = "rotate(0deg)"; // Reset arrow rotation
+            } else {
+                submenu.style.display = "block"; // Show submenu
+                arrow.style.transform = "rotate(180deg)"; // Rotate arrow to indicate open state
+            }
+        }
+    </script>
+</body>
+</html>
